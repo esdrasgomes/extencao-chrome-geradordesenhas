@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Senhas</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Gerador de Senhas</h2>
+        <div class="result-container">
+            <textarea id="result"></textarea>
+            <!-- <button class="btn" id="clipboard">
+                <i class="far fa-clipboard"></i>
+            </button> -->
+        </div>
+        <div class="settings">
+            <div class="setting">
+                <label>Quantidade de caracteres</label>
+                <input type="number" id="length" min="1" max="32" value="8">
+            </div>
+            <div class="setting">
+                <label>Incluir letras maiúsculas</label>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+            <div class="setting">
+                <label>Incluir letras minúsculas</label>
+                <input type="checkbox" id="lowercase" checked>
+            </div>
+            <div class="setting">
+                <label>Incluir números</label>
+                <input type="checkbox" id="numbers" checked>
+            </div>
+            <div class="setting">
+                <label>Incluir símbolos</label>
+                <input type="checkbox" id="symbols" checked>
+            </div>
+        </div>
+
+        <button class="btn btn-large" id="generate">
+            Gerar senha
+        </button>
+    </div>
+    <script src="script.js"></script>    
+</body>
+</html>
+
